@@ -1,0 +1,570 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin and set default font family */
+* {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+/* 3. Add accessible line-height and improve text rendering */
+body {
+  line-height: 1.5;
+  width: 60%;
+  margin-inline: auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  border-left: solid black 1px;
+  padding: 0 0 0 20px;
+}
+
+/* 4. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+/* 5. Remove built-in form typography styles */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Link styling */
+a {
+  color: rgb(22, 22, 22); 
+  text-decoration: none; 
+  position: relative;
+}
+
+.navbar-links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scale(1);
+}
+
+strong {
+  color: #006eff;
+  text-shadow: 2px 0 20px #87b1ff;
+}
+
+.no-copy {
+  user-select: none;
+}
+
+/* Navbar styling */
+.navbar-links {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.navbar-links ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-links a {
+  margin: 1.5rem;
+}
+
+/*Introduction*/
+.introduction {
+  text-align: center;
+  margin-top: 40px;
+}
+
+header h1{
+  margin-top: 50px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+header p{
+  font-size: 20px;
+  margin-bottom: 75px;
+}
+
+.introduction h2 {
+  font-size: 38px;
+}
+
+.introduction h3 {
+  font-size: 24px;
+}
+
+.introduction p {
+  margin-top: 20px;
+  margin-bottom: 200px;
+  font-size: 18px;
+}
+
+/* Curriculum container styling */
+.curriculum-container {
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.curriculum-container a:hover {
+  transform: scale(1.1);
+}
+
+.curriculum-container svg {
+  width: 1.5rem;
+}
+/* Arrow */
+.arrow {
+  font-size: 35px;
+  text-shadow: 1px 2px 5px black;
+  color: #006eff;
+}
+
+.learning-skills-h2 {
+  margin-top: 10px;
+}
+
+.icon-container {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* Experience */
+
+/* Skills styling */
+.skills h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 170px;
+}
+
+.skills h3 {
+  text-align: center;
+}
+
+/* Primary and learning skills cards styling */
+.primary-skills-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.learning-skills-cards {
+  display: flex;
+  padding: 80px 0;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.primary-skills-cards img, 
+.learning-skills-cards img {
+  width: 6rem;
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 30px 1px;
+  margin: 20px 0;
+  box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(48, 48, 48, 0.4);
+  border-radius: 10px;
+  flex: 1 1 calc(33.333% - 2rem);
+  transition: transform 300ms ease;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+}
+
+.tittle-card {
+  font-size: 25px;
+  padding-top: 2rem;
+  font-weight: 800;
+}
+
+.about-card {
+  border: solid black 1px;
+  border-radius: 20px;
+  background-color: #efefef;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.icon-btn {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.icon-btn a{
+  transition: transform 400ms ease;
+}
+
+.icon-btn a:hover {
+  transform: scale(1.2);
+}
+
+/* Projects section styling */
+.projects-tittle {
+  text-align: center;
+  font-size: 30px;
+  padding: 6rem 0 0 0;
+}
+
+.projects-cards {
+  display: flex;
+  padding: 80px 0;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 30px 1px;
+  margin: 20px 0;
+  box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(48, 48, 48, 0.4);
+  border-radius: 10px;
+  flex: 1 1 calc(33.333% - 78rem);
+  text-align: center;
+}
+
+.technologies-used {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.projects-description {
+  text-align: center;
+}
+
+/* Style the submit button with a specific background color etc */
+
+.form-section{
+  margin: 60px 0;
+}
+
+.form-section h2{
+  text-align: center;
+}
+
+.form-section h3{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #112c75;
+}
+/*Footer*/
+.socials-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.socials-footer-links a{
+  animation: transform 300ms ease;
+}
+
+.socials-footer-links a:hover{
+  transform: scale(1.2);
+  fill: #0066ff;
+}
+
+.footer-navbar{
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer-navbar a:hover{
+  color: #838181;
+}
+
+.rights {
+  text-align: center;
+}
+
+.footer-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Social footer links styling */
+.socials-footer-links svg {
+  width: 30px;
+}
+
+
+/* Color hover classes */
+.--orange a:hover {
+  color: #ff3c00;
+}
+
+.--blue a:hover {
+  color: #0066ff;
+}
+
+.--dark-blue a:hover {
+  color: #005fb8;
+}
+
+.--yellow a:hover {
+  color: #fbff00;
+}
+
+.--light-blue a:hover {
+  color: #00e1ff;
+}
+
+.--green a:hover {
+  color: #036800;
+}
+
+.--pink a:hover {
+  color: #ff00dd;
+}
+
+.--very-dark-blue a:hover {
+  color: #001f58;
+}
+
+/* ANIMATIONS (LIBRARIES)*/
+
+@keyframes SlideDown {
+  from {
+      transform: translateY(-300px);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+@keyframes SlideUp {
+  from {
+      transform: translateY(300px);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: SlideUp 1s ease-in-out;
+}
+
+.slide-down{
+  animation: SlideDown 1s ease-in-out;
+}
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation: fadeIn 600ms ease-in forwards;
+}
+/* Fade Out Animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.fade-out {
+    animation: fadeOut 1s ease-in-out forwards;
+}
+/* Slide In from Left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-out forwards;
+}
+/* Slide In from Right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-in-right {
+    animation: slideInRight 800ms ease-out forwards;
+}
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-3px);
+    }
+    60% {
+        transform: translateY(-1px);
+    }
+}
+.bounce {
+    animation: bounce 2s infinite;
+}
+/* Zoom In Animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.zoom-in {
+    animation: zoomIn 0.9s ease-in-out forwards;
+}
+/* Zoom Out Animation */
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+.zoom-out {
+    animation: zoomOut 0.5s ease-in-out forwards;
+}
+/* Rotate Animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rotate {
+    animation: rotate 1s linear infinite;
+}
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+/* Flash Animation */
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+.flash {
+    animation: flash 2s infinite;
+}
+
+@keyframes show{
+  25%{
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.show {
+  view-timeline-name: --appear;
+  view-timeline-axis: block;
+
+  animation-timeline: --appear;
+  animation-name: show;
+
+  animation-range: entry 0 cover 40%;
+}
