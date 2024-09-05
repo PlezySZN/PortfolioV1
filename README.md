@@ -1,26 +1,49 @@
-My First Portfolio
+# My First Portfolio
 
-Welcome to my first personal portfolio! This project is a simple yet effective demonstration of my skills in HTML and CSS. It reflects my journey as I continue to learn and grow in the field of web development.
+Welcome to my personal portfolio! This project is a clean and effective representation of my skills in HTML and CSS. It reflects my growth as an aspiring web developer and highlights the projects and skills I've developed along the way.
 
-Table of Contents Overview Technologies Features Installation Usage Contact
+## Table of Contents
+- [Overview](#overview)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contact](#contact)
 
-Overview
-This portfolio website is designed to showcase my skills, projects, and goals as an aspiring web developer. I have focused on creating a clean, modern, and responsive design that adapts to different screen sizes. It includes sections for my personal information, skills, and past projects.
+## Overview
+This portfolio website is designed to showcase my journey as a web developer. It features a modern, minimalist, and responsive design, ensuring compatibility with different screen sizes. The portfolio includes sections detailing my personal information, skills, and a collection of projects I’ve worked on.
 
-Technologies
+## Technologies
+- **HTML5**: Used to build the structure of the website.
+- **CSS3**: Used for styling and layout, with an emphasis on minimalism and modern aesthetics.
 
-HTML5: For the structure of the website. CSS3: For styling and layout, following a minimalistic and modern design.
+## Features
+- **Minimalistic UI**: A clean and modern user interface focused on simplicity.
+- **Portfolio Section**: Features a display of my projects with descriptions and links to live demos or repositories.
+- **Simple Animations**: Subtle animations that enhance the user interface without overwhelming the experience.
+- **Contact Information**: A section to easily get in touch with me.
 
-Features
+## Installation
+To run this project locally, follow these steps:
 
-Minimalistic UI: Simple and clean user interface with a modern aesthetic. Portfolio Section: Highlights projects with descriptions and links to live demos or repositories. Animations: Include very simples animations that increase UI a little bit better. Contact Information: Includes an easy way to get in touch with me.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/plezyszn/my-portfolio-v1.git
+    ```
 
-Installation To run this project locally, follow these steps:
+2. Navigate to the project directory:
+    ```bash
+    cd my-portfolio-v1
+    ```
 
-Clone the repository: bash Copy code git clone https://github.com/plezyszn/my-portfolio-v1.git Navigate to the project folder: bash Copy code cd my-portfolio-v1 Open index.html in your web browser.
+3. Open the `index.html` file in your browser.
 
-Usage This portfolio is meant to showcase my projects and skills. Feel free to explore and provide feedback. It's a work in progress, and I'm constantly updating it as I learn new technologies and work on new projects.
+## Usage
+This portfolio is designed to showcase my work and skills in web development. Feel free to explore the site, view my projects, and reach out if you'd like to provide feedback or collaborate on a project. I am continuously updating this portfolio as I learn new technologies and complete new projects.
 
-Contact Feel free to reach out if you'd like to collaborate or have any feedback!
+## Contact
+I’d love to hear from you! Whether you have feedback, a question, or are interested in collaborating, feel free to get in touch:
 
-Email: hsantiaggoo@gmail.com Phone: +1 787-664-4109
+- **Email**: hsantiaggoo@gmail.com
+- **Phone**: +1 787-664-4109
+
