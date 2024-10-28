@@ -46,8 +46,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Link styling */
 a {
-  color: rgb(22, 22, 22); 
-  text-decoration: none; 
+  color: rgb(22, 22, 22); /* Negro */
+  text-decoration: none;
   position: relative;
 }
 
@@ -57,7 +57,7 @@ a {
   display: block;
   width: 100%;
   height: 2px;
-  bottom: 0;
+  bottom:-5px;
   left: 0;
   background-color: #000;
   transform: scaleX(0);
@@ -82,7 +82,7 @@ strong {
   display: flex;
   font-weight: bold;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .navbar-links ul {
@@ -101,28 +101,33 @@ strong {
 }
 
 header h1{
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 45px;
-  font-weight: bold;
+  margin-top: 30px;
 }
 
-header p{
+.heading-p{
   font-size: 20px;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
 .introduction h2 {
-  font-size: 38px;
+  font-size: 35px;
 }
 
 .introduction h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .introduction p {
   margin-top: 20px;
-  margin-bottom: 200px;
-  font-size: 18px;
+  margin-bottom: 70px;
+}
+
+.arrow-down {
+  text-align: center;
+  font-size: 30px;
+  margin: 150px;
 }
 
 /* Curriculum container styling */
@@ -139,29 +144,83 @@ header p{
 .curriculum-container svg {
   width: 1.5rem;
 }
-/* Arrow */
-.arrow {
-  font-size: 35px;
-  text-shadow: 1px 2px 5px black;
-  color: #006eff;
-}
 
-.learning-skills-h2 {
-  margin-top: 10px;
-}
 
-.icon-container {
+.experience h2 {
+  font-size: 30px;
   text-align: center;
-  padding-top: 100px;
+  margin: 0 0 20px 0;
 }
 
-/* Experience */
+.experience-el-meson-sandwiches {
+  margin: 40px 0;
+}
+
+.experience-el-meson-sandwiches h3{
+  font-size: 25px;
+}
+
+.experience-el-meson-sandwiches h4{
+  font-size: 18px;
+}
+
+.experience-freelance h3{
+  font-size: 25px;
+}
+
+.experience-freelance h4{
+  font-size: 18px;
+}
+
+.education h2{
+  text-align: center;
+  font-size: 30px;
+  margin: 70px 0 20px 0;
+}
+
+
+.education-uni {
+  margin: 40px 0;
+}
+
+.education-uni h3{
+  font-size: 25px;
+}
+
+.education-uni h4{
+  font-size: 18px;
+}
+
+.education-high {
+  margin: 40px 0;
+}
+
+.education-high h3{
+  font-size: 25px;
+}
+
+.education-high h4{
+  font-size: 18px;
+}
+
+.education-elemental h3{
+  font-size: 25px;
+}
+
+.education-elemental h4{
+  font-size: 18px;
+}
+
+.education-elemental {
+  margin-bottom: 200px;
+}
+
 
 /* Skills styling */
 .skills h2 {
   text-align: center;
   font-size: 30px;
-  padding-top: 170px;
+  margin-top: 100px;
 }
 
 .skills h3 {
@@ -213,6 +272,12 @@ header p{
   font-weight: 800;
 }
 
+.card img{
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0 12px;
+}
+
 .about-card {
   border: solid black 1px;
   border-radius: 20px;
@@ -246,10 +311,17 @@ header p{
 
 .projects-cards {
   display: flex;
-  padding: 80px 0;
+  padding: 10px 0;
   gap: 2rem;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 350px;
+}
+
+.projects{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .card {
@@ -277,26 +349,6 @@ header p{
   text-align: center;
 }
 
-/* Style the submit button with a specific background color etc */
-
-.form-section{
-  margin: 60px 0;
-}
-
-.form-section h2{
-  text-align: center;
-}
-
-.form-section h3{
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #112c75;
-}
-/*Footer*/
 .socials-footer-links {
   display: flex;
   justify-content: center;
@@ -332,6 +384,44 @@ input[type=submit]:hover {
   margin: 0;
 }
 
+/*Contact*/
+
+.contact-heading {
+  text-align: center;
+  margin: 30px 0 70px 0;
+  font-size: 30px;
+}
+
+.FormI {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 2px 0 20px 0;
+  border-radius: 8px;
+  border: none;
+  border: solid black 1.5px;
+  outline: none;
+  transition: background-color 200ms ease;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+input[type=submit]{
+  background-color: #006eff;
+  color: #fff;
+}
+
+input[type=submit]:hover{
+  background-color: #014aaa;
+  cursor: pointer;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
 /* Social footer links styling */
 .socials-footer-links svg {
   width: 30px;
@@ -339,6 +429,7 @@ input[type=submit]:hover {
 
 
 /* Color hover classes */
+
 .--orange a:hover {
   color: #ff3c00;
 }
@@ -566,5 +657,5 @@ input[type=submit]:hover {
   animation-timeline: --appear;
   animation-name: show;
 
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 28%;
 }
