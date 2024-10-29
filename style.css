@@ -245,7 +245,6 @@ header h1{
 
 .primary-skills-cards img, 
 .learning-skills-cards img {
-  width: 6rem;
   display: flex;
 }
 
