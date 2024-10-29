@@ -658,3 +658,22 @@ form {
 
   animation-range: entry 0 cover 28%;
 }
+
+@media (max-width: 800px) {
+  .navbar-links a{
+    display: none !important;
+  }
+  .cards {
+    width: 500px;
+    padding: 10px 40px;
+    margin: 40px 0;
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(48, 48, 48, 0.4);
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 2rem);
+    transition: transform 300ms ease;
+  }
+  .show {
+    animation: none;
+  }
+
+}
